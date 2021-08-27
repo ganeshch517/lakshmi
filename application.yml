@@ -1,2 +1,20 @@
 name: final update from github11111
 name2: update from githubbbbbbbbbbbbbbbb
+
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
